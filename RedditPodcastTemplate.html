@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reddit Podcast Mondays</title>
+    </head>
+    <script type="text/javascript">
+        function firstLine(){
+            var topic   = document.getElementById('topicTheme').value;
+            var episode = document.getElementById('episodeNumber').value;
+
+            var string = "[" + topic.bold() + "]" + "<b> The Truth About Beer And | Season 2, Episode </b>" + episode.bold() +
+            "<br>";
+
+            document.getElementById('lineOne').innerHTML = string;
+        }
+
+        //function episodeRating(){
+            var sfwPost  = document.getElementById('ratingSF').value;
+            var nsfwPost = document.getElementById('ratingNS').value;
+
+            document.getElementById('lineOne').innerHTML = 
+
+
+        }
+
+
+        /*function thirdLine(){
+            var appleLink = document.getElementById(applePod).value;
+            document.write("Apple Podcast" + appleLink.link('appleLink'));
+            var googleLink = document.getElementById(googlePlay).value;
+            document.write("Google Play" + googleLink.link('googleLink'));
+            var spotifyLink = document.getElementById(spotify).value;
+            document.write("Spotify" + spotifyLink.link('spotifyLink'));
+            var iHeartLink = document.getElementById(iHeartRadio).value;
+            document.write("iHeartRadio" + iHeartLink.link('iHeartLink'));
+            var pandoraLink = document.getElementById(pandora).value;
+            document.write("Pandora" + pandoraLink.link('pandoraLink'));
+
+            var string = appleLink.link() + " //" + googleLink.link() + " //";
+
+            document.getElementById('lineOne').innerHTML = string;
+            
+            
+
+            //document.getElementById('output')
+        }
+        */
+    </script>
+    <body>
+        
+        <input type="text" id="topicTheme" size="8" placeholder="Topic Theme">
+        <dev>
+            <b>The Truth About Beer And</b>
+        </dev>
+        <dev>
+            <b>Season 2, Episode</b>
+        </dev>
+        <input type="text" id="episodeNumber" size="8" placeholder="Number">
+        <br>
+        <dev>
+            <input type="checkbox" name="SFW" id="ratingSF">SFW
+            <br>
+            <input type="checkbox" name="NSFW" id="ratingNS">NSFW
+        </dev>
+        <br>
+        <dev>
+            <input type="text" id="applePod" size="8" placeholder="Apple Podcast">
+        </dev>
+         //
+        <dev>
+            <input type="text" id="googlePlay" size="8" placeholder="Google Play">
+        </dev>
+         //
+        <dev>
+            <input type="text" id="spotify" size="8" placeholder="Spotify">
+        </dev>
+         //
+        <dev>
+            <input type="text" id="iHeartRadio" size="8" placeholder="iHeartRadio">
+        </dev>
+         //
+        <dev>
+            <input type="text" id="pandora" size="8" placeholder="Pandora">
+        </dev>
+        <br>
+        <br>
+        <button type="button" onclick="firstLine()">Submit</button>
+        <br>
+        <div id="lineOne"> </div>
+        
+    <!--<input type="button" id="btn" value="Domain" onClick="javascript: window.open('https://whois.icann.org/en/lookup?name=' + document.getElementById('Domain').value);" />: <input type="text" id="Domain" size="16">
+    <script src="scripts/firstLine.js"></script>   -->     
+    </body>
+</html>
